@@ -1,0 +1,5 @@
+FROM wordpress
+# replace this with your application's default port
+
+WORKDIR /Work/docker-wordpress
+ADD ./theme /Work/docker-wordpress
