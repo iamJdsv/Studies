@@ -1,0 +1,354 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  /*overflow: hidden;*/
+  font-family: Roboto;
+  color: black;
+}
+header {
+  height: 60px;
+  z-index: 99999;
+  background: #273796;
+  width: 100%;
+  margin: 0px auto;
+  position: fixed;
+  text-align: center;
+  box-shadow: 0 4px 2px -2px gray;
+}
+header h1 {
+  margin-top: 10px;
+  color: white;
+}
+
+h2{
+  text-align: center;
+  margin-top: -20px;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.buttonBack {
+  background: url("../images/left207.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  filter: invert(100%);
+  top: 15px;
+  left: 10px;
+  height: 30px;
+  width: 30px;
+
+}
+.dummy {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*ECRAN OSCAR*/
+
+#wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 999999999999999;
+}
+#wrapper h1 {
+  font-family: Roboto;
+  color: #00A0C6;
+  font-weight: 100;
+  display: block;
+  font-size: 4em;
+  margin: 0px;
+  text-align: center;
+}
+
+
+
+#wrapper p{
+  text-align: center;
+}
+#intro{
+  height: 300px;
+}
+#wrapper img{
+  width: 100px;
+  display: block;
+  margin-top: 200px;
+  margin: auto;
+
+}
+
+/*ECRAN TOUS LES PROJETS*/
+
+#main a {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+#add {
+  right: 5.5%;
+  bottom: 5.5%;
+  display: block;
+  width: 55px;
+  height: 55px;
+  position: fixed;
+}
+
+#add img{
+  width: 55px;
+  height: 55px;
+}
+
+
+#text p {
+  display: block;
+  width: 30%;
+  margin: auto;
+}
+#text #num {
+  text-align: center
+}
+#text #decembre {
+  text-align: center;
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+#text #decembre::before {
+  position: relative;
+  top: 4px;
+  left: -22px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: '';
+  background-color: black;
+}
+#text #debit {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 5px;
+  border: 1px solid black;
+}
+#text h2 {
+  display: block;
+  width: 50%;
+  text-align: center;
+  font-size: 1em;
+  margin: auto;
+  margin-bottom: 5px;
+}
+#text .parametres {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-right: 15px;
+}
+.parametres p {
+  line-height: 30px;
+  padding-right: 5px;
+}
+#text #pauseButton {
+  padding-right: 25px;
+}
+#text #pauseButton h2 {
+  margin-bottom: 20px
+}
+#text #pauseButton h2::after {
+  position: relative;
+  display: inline-block;
+  top: 16px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  content: '';
+  background-color: black;
+  border-radius: 50%;
+}
+
+#pause{
+  width: 120px;
+  height: 120px;
+  background-color: rgba(74, 74, 74, 0.3);
+  border: 1px solid rgba(74, 74, 74, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  top: 139px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+/*ECRAN NOUVEAU PROJET*/
+
+#nouveau {
+  text-align: center;
+}
+
+.form input {
+  width: 14em;
+  text-indent: 1em;
+  line-height: 33px;
+  border: 2px solid #00A0C6;
+}
+
+.form::before {
+  position: relative;
+  top: 15px; left: 3px;
+  content: '';
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #00A0C6;
+}
+
+.nom::before {
+  background-image: url("../images/Symbole_Projet_couleur.png");
+}
+
+.cout::before {
+  background-image: url("../images/Symbole_Argent_couleur.png");
+}
+
+.choix {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px; padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+
+.choix img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.choix input {
+  border-radius: 5%;
+  border: 1px solid #00A0C6;;
+  margin-bottom: 20px;
+}
+
+.date {
+  margin-top: 15px;
+  border-top: 2px solid black;
+}
+
+.date label {
+  font-family: Roboto;
+  padding-right: 20px;
+}
+
+.montant {
+  opacity: .4;
+  border-top: 1px solid black; 
+}
+
+.montant input {
+  width: 65px;
+  border-radius: 5%;
+  border: 2px solid #00A0C6;
+}
+
+#continuer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #00A0C6;
+  width: 100%;
+  height: 60px;
+  z-index: 99999;
+  margin: 0px auto;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+#continuer p {
+  position: relative;
+  top: 15px;
+  width: 130px;
+  font-size: 1.5em;
+  color: white;
+  margin: auto;
+}
+
+#suivant {
+  float: right;
+  width: 60px;
+  height: 60px;
+  background-image: url("../images/Symbole_FlecheSuivant_Blanc.png");
+  background-size: 20px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#options {
+  text-align: center;
+}
+
+#options select {
+  width: 20em;
+  text-indent: 1em;
+  line-height: 33px;
+  font-family: Roboto;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 5%;
+  border: 1px solid #00A0C6;
+}
+
+<<<<<<< HEAD
+.check img {
+  position: relative;
+  top: 10px;
+  width: 60px;
+  height: 30px;
+  margin-left: 30px;
+}
+
+#options .check select {
+  width: 4em;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#valider {
+  width: 140px;
+  height: 140px;
+  margin: auto;
+}
+
+#pause{
+  width: 120px;
+  height: 120px;
+  background-color: rgba(74, 74, 74, 0.06);
+  background-image: url("../images/Symbole_Pause.png");
+  background-size: 120px 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 139px;
+  left: 0;
+  right: 0;
+  display: none;
+>>>>>>> f000fbcbefb9c5ab6d52bb7c9dead0eb1d9b4155
+}

@@ -1,0 +1,37 @@
+.background {
+    fill: #FFFFFF;
+    fill-opacity: 0.01;
+}
+
+.component {
+    fill: #e1e1e1;
+}
+
+.component .label {
+    text-anchor: middle;
+    fill: #0000FF;
+}
+
+.arc {
+    stroke-weight:0.1;
+    fill: #3AAA35;
+}
+
+
+.arc2 {
+    stroke-weight:0.1;
+    fill: #287024;
+}
+
+
+.label {
+    font-family: roboto, Arial;
+    text-anchor: middle;
+}
+
+.radial-svg {
+    display: block;
+    margin: auto;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
